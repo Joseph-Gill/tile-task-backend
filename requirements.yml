@@ -1,0 +1,9 @@
+name: incling-preinterview
+
+dependencies:
+  - python=3.7
+  - pip=20.1.1
+  - psycopg2=2.8.5
+  - pip:
+      - Django==2.2
+      - djangorestframework==3.11.0
