@@ -11,7 +11,10 @@ class Task(models.Model):
 
     title = models.TextField()
 
-    order = models.TextField()
+    order = models.TextField(
+        blank=True,
+        null=True
+    )
 
     description = models.TextField()
 
