@@ -15,5 +15,8 @@ class Tile(models.Model):
         choices=STATUS
     )
 
+    class Meta:
+        ordering = ['launch_date', 'pk']
+
     def __str__(self):
         return f'Tile #{self.id}'

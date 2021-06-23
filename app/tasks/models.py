@@ -36,5 +36,8 @@ class Task(models.Model):
         blank=True
     )
 
+    class Meta:
+        ordering = ['created', 'pk']
+
     def __str__(self):
         return f'Task #{self.id} for Tile #{self.tile.id}'
